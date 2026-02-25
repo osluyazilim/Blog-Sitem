@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda - Yunus OSLU</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: { extend: { keyframes: { 'fade-in-down': { '0%': { opacity: '0', transform: 'translateY(-20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' }, } }, animation: { 'fade-in-down': 'fade-in-down 0.8s ease-out' } } }
+        }
+    </script>
+
+    </head>
+<body class="bg-gray-900 text-gray-200">
+<header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-white lg:text-3xl hover:text-blue-400 transition-colors">
+            Yunus OSLU
+        </a>
+        <div class="flex items-center">
+            <button id="mobile-menu-button" class="lg:hidden text-gray-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <ul class="hidden lg:flex lg:items-center lg:space-x-8">
+                <li><a href="index.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Hakkımda</a></li>
+                <li><a href="projeler.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Projelerim</a></li>
+                <li><a href="cv.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">CV</a></li>
+                <li><a href="iletisim.html" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4 border-t border-gray-700">
+        <ul class="flex flex-col space-y-3 pt-4">
+            <li><a href="index.html" class="block text-gray-300 hover:text-blue-400">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html" class="block text-gray-300 hover:text-blue-400">Hakkımda</a></li>
+            <li><a href="projeler.html" class="block text-gray-300 hover:text-blue-400">Projelerim</a></li>
+            <li><a href="cv.html" class="block text-gray-300 hover:text-blue-400">CV</a></li>
+            <li><a href="iletisim.html" class="block text-gray-300 hover:text-blue-400">İletişim</a></li>
+        </ul>
+    </div>
+</header>
+    <main class="py-20">
+        <div class="container mx-auto px-6 animate-fade-in-down">
+            <div class="bg-gray-800/50 rounded-lg p-8 md:p-12 border border-gray-700">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-1">
+                            <img src="logo2.png" alt="Yunus OSLU Profil Fotoğrafı" class="rounded-full mx-auto w-48 h-48 md:w-full md:h-auto object-cover border-4 border-gray-700">
+                        </div>
+                    <div class="md:col-span-2 text-center md:text-left">
+                        <h1 class="text-4xl font-extrabold text-white">Yunus OSLU</h1>
+                        <p class="mt-2 text-lg text-blue-400 font-medium">Yazılım Mühendisi &amp; Geliştirici</p>
+                        <p class="mt-4 text-gray-300">
+                            <p class="about-text">
+      Merhaba, ben Yunus Oslu. Yazılım mühendisliği öğrencisi olarak, yazılım geliştirme ve
+      teknoloji çözümleri üretme alanında profesyonel bir yaklaşım benimsiyorum. HTML, CSS,
+      Java ve Python dillerinde deneyim sahibiyim ve özellikle web uygulamaları üzerine
+      çalışmalarıma odaklanıyorum.
+    </p>
+    <br>
+    <p class="about-text">
+      Bugüne kadar kişisel portfolyo projeleri ve haber doğruluk sitesi gibi web uygulamaları
+      ile Arduino tabanlı akıllı sistemler geliştirdim. Açık kaynak projelerine katkıda
+      bulunmayı ve sürekli öğrenerek yetkinliklerimi artırmayı hedefliyorum.
+    </p>
+    <br>
+    <p class="about-text">
+      Amacım, yenilikçi ve kullanıcı odaklı yazılım çözümleri üreterek teknoloji alanında
+      katma değer yaratmaktır.
+    </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-gray-700">
+                    <h2 class="text-2xl font-bold text-white text-center mb-6">Teknik Becerilerim</h2>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full text-sm font-medium">JavaScript</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full text-sm font-medium">Java</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full text-sm font-medium">Python</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full text-sm font-medium">SQL</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full text-sm font-medium">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer class="bg-gray-900 border-t border-gray-700">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 Yunus OSLU. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+    </body>
+</html>
